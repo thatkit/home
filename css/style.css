@@ -81,6 +81,10 @@ main {
 /* Top section */
 
 section#top {
+    width: 100%;
+    height: calc(100vh - 100px - 194px);
+    padding: 0;
+    margin-bottom: 194px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

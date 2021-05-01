@@ -1,0 +1,61 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+/* Global Styles */
+
+html {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 1536px;
+    height: 3052px;
+}
+
+/* Navbar */
+
+nav {
+    width: calc(100% - 198px * 2);
+    height: 100px;
+    margin: 0 198px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+nav > h3 {
+    
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav > li {
+    
+}
+
+/* Main */
+
+main {
+    width: 100%;
+    margin: 0 198px;
+    position: relative;
+    top: 100px;
+}
+
+/* Top section */
+
+/* Works section */
+
+/* Contacts section */
+
+/* Footer */
+
+footer {
+    margin: 0 198px;
+}

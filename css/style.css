@@ -5,8 +5,9 @@
 /* Global Styles */
 
 html {
-    font-size: 18px;
+    font-size: 24px;
     font-family: 'Roboto', sans-serif;
+    color: #413D43;
 }
 
 body {
@@ -14,6 +15,12 @@ body {
     height: 3052px;
     background: url('./background-tile.png') hsla(0, 0%, 100%, 0.35);
     background-blend-mode: lighten;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #413D43;
 }
 
 /* Navbar */
@@ -21,6 +28,8 @@ body {
 nav {
     width: calc(100% - 198px * 2);
     height: 100px;
+    padding-top: 19px;
+    padding-bottom: 131px;
     margin: 0 198px;
     position: fixed;
     z-index: 1;
@@ -29,16 +38,28 @@ nav {
     justify-content: space-between;
 }
 
-nav > h3 {
-    
+nav h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.67rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    color: #9C39C6;
+    filter: drop-shadow(0px 0px 5px #9c39c680);
 }
 
 nav > ul {
     display: flex;
 }
 
-nav > li {
-    
+nav li {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.67rem;
+    letter-spacing: 0.1rem;
+    text-transform: lowercase;
+    margin-left: 44px;
 }
 
 /* Main */

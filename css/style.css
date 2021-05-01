@@ -135,6 +135,78 @@ button#CTA-cstyle {
 
 /* Works section */
 
+section#works {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+section#works > h3 {
+    width: 100%;
+    align-self: flex-start;
+}
+
+div.works-card {
+    background-color: gray;
+    width: 281px;
+    height: 350px;
+}
+
+div.works-card-image-container {
+    background: #9C39C6;
+    width: 100%;
+    height: calc(100% / 2);
+}
+
+div.works-card-text-container {
+    background-color: #DAC08B;
+    width: 100%;
+    height: calc(100% / 2);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.works-card-text-container > h4 {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.67rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    margin-top: 26px;
+}
+
+div.works-card-text-container > p {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 0.875rem;
+    letter-spacing: 0.05rem;
+    margin-top: 26px;
+}
+
+div.works-card-image-container.calc {
+    background: url(../img/calc.jfif) center/100% no-repeat;
+    z-index: -1;
+}
+
+div.works-card-image-container.tic-tac-toe {
+    background: url(../img/tic-tac-toe.jfif) center/100% no-repeat;
+    z-index: -1;
+}
+
+div.colouring-film {
+    background: #9C39C6;
+    opacity: 0.35;
+    width: 100%;
+    height: 100%;
+}
+
 /* Contacts section */
 
 /* Footer */

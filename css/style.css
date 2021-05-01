@@ -12,6 +12,8 @@ html {
 body {
     width: 1536px;
     height: 3052px;
+    background: url('./background-tile.png') hsla(0, 0%, 100%, 0.35);
+    background-blend-mode: lighten;
 }
 
 /* Navbar */

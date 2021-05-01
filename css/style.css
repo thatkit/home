@@ -5,7 +5,7 @@
 /* Global Styles */
 
 * {
-    box-sizing: ;
+    box-sizing: border-box;
 }
 
 html {
@@ -17,9 +17,11 @@ html {
 body {
     width: 1536px;
     height: 3052px;
+    padding-left: 198px;
+    padding-right: 198px;
     background: url('./background-tile.png') hsla(0, 0%, 100%, 0.35);
     background-blend-mode: lighten;
-    overflow: hidden;
+    /*overflow: hidden; cannot scroll without it*/
 }
 
 a {
@@ -30,10 +32,9 @@ a {
 /* Navbar */
 
 nav {
-    width: calc(100% - 198px * 2);
+    width: calc(1536px - 396px);
     height: 100px;
     padding: 26px 0;
-    margin: 0 198px;
     position: fixed;
     z-index: 1;
     display: flex;
@@ -72,13 +73,61 @@ nav li {
 /* Main */
 
 main {
-    width: 100%;
-    margin: 0 198px;
+    width: calc(1536px - 396px);
     position: relative;
     top: 100px;
 }
 
 /* Top section */
+
+section#top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header {
+    padding-top: 194px;
+}
+
+header > h1 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 2.33rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+header > h1:first-line {
+    color: #C79F4E;
+}
+
+header > h2 {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.67rem;
+    letter-spacing: 0.155rem;
+    text-transform: lowercase;
+    opacity: 0.7;
+    margin-top: 2rem;
+}
+
+button#CTA-cstyle {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.67rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #9C39C6;
+    box-shadow: 0px 10px 30px #9c39c640;
+    width: 311px;
+    height: 69px;
+    border: none;
+}
 
 /* Works section */
 

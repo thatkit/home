@@ -237,6 +237,14 @@ div.skills-card-description > p {
     letter-spacing: 0.05rem;
 }
 
+div.skills-card-icon-container {
+    width: 54px;
+    height: ;
+}
+
+div.skills-card-icon-container.html {
+    background: url(../img/icons/html\ mono.svg);
+}
 
 /* Contacts section */
 

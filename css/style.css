@@ -207,6 +207,37 @@ div.colouring-film {
     height: 100%;
 }
 
+/* Skills */
+
+section#skills {
+    width: 100%;
+    height: 100vh;
+}
+
+#skills-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+div.skills-card {
+    width: 1176px;
+    height: 117px;
+    padding: 13px 0;
+}
+
+div.skills-card-description > p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.67rem;
+    letter-spacing: 0.05rem;
+}
+
+
 /* Contacts section */
 
 /* Footer */

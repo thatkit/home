@@ -292,6 +292,20 @@ div.level-fraction:first-child {
 
 /* Contacts section */
 
+div.contact-card {
+    background: #DAC08B;
+    width: 13.75rem;
+    height: 11.67rem;
+}
+
+div.contact-card-image-container {
+    background: url(../img/personal-photo.jfif) center/130% no-repeat #A8C7B8;
+    background-position: -0.2rem 0.01rem;
+    width: 5.25rem;
+    height: 5.25rem;
+    border-radius: 50%;
+}
+
 /* Footer */
 
 footer {

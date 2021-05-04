@@ -265,6 +265,21 @@ div.skills-card-icon-container.figma {
     shape-rendering: crispEdges;
 }
 
+div.skills-card-level {
+    display: flex;
+}
+
+div.level-fraction {
+    background: #C79F4E;
+    width: 40px;
+    height: 54px;
+    margin-left: 0.5rem;
+}
+
+div.level-fraction:first-child {
+    background: #DAC08B;
+}
+
 /* Contacts section */
 
 /* Footer */

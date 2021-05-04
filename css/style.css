@@ -13,6 +13,7 @@ html {
     font-family: 'Roboto', sans-serif;
     color: #413D43;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -22,10 +23,11 @@ body {
     padding-right: 198px;
     background: url('./background-tile.png') hsla(0, 0%, 100%, 0.35);
     background-blend-mode: lighten;
-    /*overflow: hidden; cannot scroll without it*/
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    align-items: center;
+    /*overflow: hidden; cannot scroll without it*/
 }
 
 a {
@@ -83,7 +85,7 @@ main {
 }
 
 section > h3 {
-    visibility: hidden;
+    display: none;
 }
 
 /* Top section */
@@ -275,6 +277,7 @@ div.skills-card-icon-container.figma {
 
 div.skills-card-level {
     width: 13rem;
+    margin-right: 40px; /* in order to fix the layout inconsistency */
     display: flex;
     justify-content: flex-end;
 }

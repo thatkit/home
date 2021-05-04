@@ -238,20 +238,20 @@ div.skills-card-description > p {
     font-weight: bold;
     line-height: 1.67rem;
     letter-spacing: 0.05rem;
+    width: 20rem;
 }
 
 div.skills-card-icon-container {
     width: 54px;
+    height: 60px;
 }
 
 div.skills-card-icon-container.html {
     background: url(../img/icons/html-mono.svg);
-    height: 60px;
 }
 
 div.skills-card-icon-container.css {
     background: url(../img/icons/css-mono.svg);
-    height: 60px;
 }
 
 div.skills-card-icon-container.js {
@@ -266,7 +266,9 @@ div.skills-card-icon-container.figma {
 }
 
 div.skills-card-level {
+    width: 13rem;
     display: flex;
+    justify-content: flex-end;
 }
 
 div.level-fraction {

@@ -78,6 +78,10 @@ main {
     top: 100px;
 }
 
+section > h3 {
+    visibility: hidden;
+}
+
 /* Top section */
 
 section#top {

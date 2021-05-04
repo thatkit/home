@@ -341,6 +341,45 @@ div.contact-card-description > p {
     letter-spacing: 0.05rem;
 }
 
+div.contact-card-contacts {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.contact {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+div.contact-icon-container {
+    width: 2.25rem;
+    margin-right: 2rem;
+}
+
+div.contact-icon-container.github {
+    background: url(../img/icons/github-mono.svg) center/100% no-repeat;
+    height: 2.25rem;
+}
+
+div.contact-icon-container.gmail {
+    background: url(../img/icons/gmail-mono.svg) center/100% no-repeat;
+    height: 2.25rem;
+}
+
+div.contact > a {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.167rem;
+    letter-spacing: 0.05rem;
+    text-decoration: underline #9C39C6;
+}
+
+
+
 /* Footer */
 
 footer {

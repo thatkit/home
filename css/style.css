@@ -239,11 +239,11 @@ div.skills-card-description > p {
 
 div.skills-card-icon-container {
     width: 54px;
-    height: ;
 }
 
 div.skills-card-icon-container.html {
-    background: url(../img/icons/html\ mono.svg);
+    background: url(../img/icons/html-mono.svg);
+    height: 60px;
 }
 
 /* Contacts section */

@@ -151,7 +151,7 @@ section#works {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 section#works > h3 {

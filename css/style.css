@@ -246,6 +246,11 @@ div.skills-card-icon-container.html {
     height: 60px;
 }
 
+div.skills-card-icon-container.css {
+    background: url(../img/icons/css-mono.svg);
+    height: 60px;
+}
+
 /* Contacts section */
 
 /* Footer */

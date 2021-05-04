@@ -227,6 +227,9 @@ div.skills-card {
     width: 1176px;
     height: 117px;
     padding: 13px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 div.skills-card-description > p {
@@ -249,6 +252,17 @@ div.skills-card-icon-container.html {
 div.skills-card-icon-container.css {
     background: url(../img/icons/css-mono.svg);
     height: 60px;
+}
+
+div.skills-card-icon-container.js {
+    background: url(../img/icons/js-mono.svg);
+    height: 54px;
+}
+
+div.skills-card-icon-container.figma {
+    background: url(../img/icons/figma-mono.svg);
+    height: 81px;
+    shape-rendering: crispEdges;
 }
 
 /* Contacts section */

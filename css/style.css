@@ -313,7 +313,7 @@ div.skills-card-icon-container.figma {
 }
 
 div.skills-card-level {
-    width: 13rem;
+    width: calc(7 * (40px + 0.5rem));
     margin-right: 40px; /* in order to fix the layout inconsistency */
     display: flex;
     justify-content: flex-end;

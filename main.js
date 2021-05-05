@@ -1,7 +1,6 @@
 /* Animations */
 
 // Navbar highlight
-// THE FUNCS CAN BE REFACTORED
 
 const worksHeading = document.getElementById('works-heading');
 const skillsHeading = document.getElementById('skills-heading');
@@ -19,40 +18,33 @@ const isInViewport = element => {
     );
 }
 
-const highlightWorks = () => {
-    if (isInViewport(worksHeading) === true) {
-        worksNav.style.color = '#C79F4E';
-        worksNav.style.opacity = 1;
+const highlight = el => {
+    
+    let nav = '';
+    if (el === worksHeading) {
+        nav = worksNav;
+    } else if (el === skillsHeading) {
+        nav = skillsNav;
+    } else if (el === contactsHeading) {
+        nav = contactsNav;
     } else {
-        worksNav.style.color = '';
-        worksNav.style.opacity = '';
+        console.log('wrong nav asignment');
     }
-}
 
-const highlightSkills = () => {
-    if (isInViewport(skillsHeading) === true) {
-        skillsNav.style.color = '#C79F4E';
-        skillsNav.style.opacity = 1;
+    if (isInViewport(el) === true) {
+        nav.style.color = '#C79F4E';
+        nav.style.opacity = 1;
     } else {
-        skillsNav.style.color = '';
-        skillsNav.style.opacity = '';
+        nav.style.color = '';
+        nav.style.opacity = '';
     }
-}
 
-const highlightContacts = () => {
-    if (isInViewport(contactsHeading) === true) {
-        contactsNav.style.color = '#C79F4E';
-        contactsNav.style.opacity = 1;
-    } else {
-        contactsNav.style.color = '';
-        contactsNav.style.opacity = '';
-    }
 }
 
 const hightlightSet = () => {
-    highlightWorks();
-    highlightSkills();
-    highlightContacts();
+    highlight(worksHeading);
+    highlight(skillsHeading);
+    highlight(contactsHeading);
 }
 
 document.onwheel = () => hightlightSet();

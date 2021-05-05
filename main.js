@@ -15,9 +15,19 @@ workCards[2].onmouseout = () => colouringFilm[2].style.opacity = '';
 
 // Skills cards hover animation
 
-const skillCardsContainer = document.getElementById('skills-container');
+const skillCards = document.getElementsByClassName('skills-card');
 const skillIcons = document.getElementsByClassName('skills-card-icon-container');
 
-//skillCardsContainer.addEventListener('mouseover', function(event) {
-//    skillIcons[0].style.background = 'url(\'../img/icons/html-colour.svg\')';
-//})
+skillCards[0].onmouseover = () => {
+    skillIcons[0].style.background = 'url("../personal-portfolio-page/img/icons/html-colour.svg")';
+    skillIcons[1].style.background = 'url("../personal-portfolio-page/img/icons/css-colour.svg")';
+}
+skillCards[1].onmouseover = () => skillIcons[2].style.background = 'url("../personal-portfolio-page/img/icons/js-colour.svg")';
+skillCards[2].onmouseover = () => skillIcons[4].style.background = 'url("../personal-portfolio-page/img/icons/figma-colour.svg")';
+
+skillCards[0].onmouseout = () => {
+    skillIcons[0].style.background = '';
+    skillIcons[1].style.background = '';
+}
+skillCards[1].onmouseout = () => skillIcons[2].style.background = '';
+skillCards[2].onmouseout = () => skillIcons[4].style.background = '';

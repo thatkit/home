@@ -290,6 +290,7 @@ div.skills-card-description > p {
 div.skills-card-icon-container {
     width: 54px;
     height: 60px;
+    transition: background-image 300ms ease;
 }
 
 div.skills-card-icon-container.html {

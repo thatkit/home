@@ -1,5 +1,7 @@
 /* Fonts */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 
 /* Global Styles */
@@ -38,6 +40,7 @@ a {
 /* Navbar */
 
 nav {
+    font-family: 'Roboto Mono', monospace;
     width: calc(1536px - 396px);
     height: 100px;
     padding: 26px 0;
@@ -56,6 +59,11 @@ nav h3 {
     text-transform: uppercase;
     color: #9C39C6;
     filter: drop-shadow(0px 0px 5px #9c39c680);
+    transition: filter 300ms ease;
+}
+
+nav h3:hover {
+    filter: none;
 }
 
 nav h3 > a {
@@ -66,7 +74,8 @@ nav > ul {
     display: flex;
 }
 
-nav li {
+nav h4 {
+    opacity: 0.7;
     font-size: 1rem;
     font-style: normal;
     font-weight: normal;
@@ -74,6 +83,21 @@ nav li {
     letter-spacing: 0.1rem;
     text-transform: lowercase;
     margin-left: 44px;
+    transition: all 100ms ease;
+}
+
+nav h4::before {
+    content: '_';
+    color: #413d4300;
+    text-decoration: underline #413d43;
+}
+
+nav h4:hover {
+    text-decoration: underline;
+}
+
+nav h4:active {
+    opacity: 1;
 }
 
 /* Main */
@@ -141,6 +165,17 @@ button#CTA-cstyle {
     width: 311px;
     height: 69px;
     border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-out, background-color 100ms ease;
+}
+
+button#CTA-cstyle:hover {
+    box-shadow: 0px 10px 30px #9C39C6;
+}
+
+button#CTA-cstyle:active {
+    background-color: #C79F4E;
+    box-shadow: none;
 }
 
 /* Works section */

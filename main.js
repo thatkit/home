@@ -34,9 +34,11 @@ const highlight = el => {
     if (isInViewport(el) === true) {
         nav.style.color = '#C79F4E';
         nav.style.opacity = 1;
+        nav.style.fontWeight = 'bold';
     } else {
         nav.style.color = '';
         nav.style.opacity = '';
+        nav.style.fontWeight = '';
     }
 
 }

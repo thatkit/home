@@ -109,7 +109,13 @@ main {
 }
 
 section > h3 {
-    display: none;
+    color: #413D4300;
+    position: absolute;
+    display: block;
+}
+
+section#contacts > h3 {
+    bottom: 20rem;
 }
 
 /* Top section */

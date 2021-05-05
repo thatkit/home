@@ -1,5 +1,64 @@
 /* Animations */
 
+// Navbar highlight
+// THE FUNCS CAN BE REFACTORED
+
+const worksHeading = document.getElementById('works-heading');
+const skillsHeading = document.getElementById('skills-heading');
+const contactsHeading = document.getElementById('contacts-heading');
+
+const worksNav = document.getElementById('works-nav');
+const skillsNav = document.getElementById('skills-nav');
+const contactsNav = document.getElementById('contacts-nav');
+
+const isInViewport = element => {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= -200 &&
+        rect.bottom <= ((window.innerHeight - 100) || (document.documentElement.clientHeight - 100))
+    );
+}
+
+const highlightWorks = () => {
+    if (isInViewport(worksHeading) === true) {
+        worksNav.style.color = '#C79F4E';
+        worksNav.style.opacity = 1;
+    } else {
+        worksNav.style.color = '';
+        worksNav.style.opacity = '';
+    }
+}
+
+const highlightSkills = () => {
+    if (isInViewport(skillsHeading) === true) {
+        skillsNav.style.color = '#C79F4E';
+        skillsNav.style.opacity = 1;
+    } else {
+        skillsNav.style.color = '';
+        skillsNav.style.opacity = '';
+    }
+}
+
+const highlightContacts = () => {
+    if (isInViewport(contactsHeading) === true) {
+        contactsNav.style.color = '#C79F4E';
+        contactsNav.style.opacity = 1;
+    } else {
+        contactsNav.style.color = '';
+        contactsNav.style.opacity = '';
+    }
+}
+
+const hightlightSet = () => {
+    highlightWorks();
+    highlightSkills();
+    highlightContacts();
+}
+
+document.onwheel = () => hightlightSet();
+document.onmouseover = () => hightlightSet();
+document.onclick = () => hightlightSet();
+
 // Works cards hover animation
 
 const workCards = document.getElementsByClassName('works-card');

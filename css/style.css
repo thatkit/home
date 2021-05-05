@@ -413,9 +413,16 @@ div.contact > a {
     line-height: 1.167rem;
     letter-spacing: 0.05rem;
     text-decoration: underline #9C39C6;
+    transition: color 100ms ease;
 }
 
+div.contact > a:hover {
+    text-decoration: none;
+}
 
+div.contact > a:active {
+    color: #C79F4E;
+}
 
 /* Footer */
 

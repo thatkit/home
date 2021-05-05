@@ -89,14 +89,15 @@ nav h4 {
 nav h4::before {
     content: '_';
     color: #413d4300;
-    text-decoration: underline #413d43;
+    text-decoration: underline #C79F4E;
 }
 
 nav h4:hover {
-    text-decoration: underline;
+    text-decoration: underline #C79F4E;
 }
 
 nav h4:active {
+    color: #C79F4E;
     opacity: 1;
 }
 

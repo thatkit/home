@@ -83,7 +83,7 @@ nav h4 {
     letter-spacing: 0.1rem;
     text-transform: lowercase;
     margin-left: 44px;
-    transition: all 100ms ease;
+    transition: text-decoration 100ms ease, opacity 100ms ease;
 }
 
 nav h4::before {

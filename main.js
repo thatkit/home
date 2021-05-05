@@ -31,3 +31,14 @@ skillCards[0].onmouseout = () => {
 }
 skillCards[1].onmouseout = () => skillIcons[2].style.background = '';
 skillCards[2].onmouseout = () => skillIcons[4].style.background = '';
+
+// Contacts hover animation
+
+const contacts = document.getElementsByClassName('contact');
+const contactIcons = document.getElementsByClassName('contact-icon-container');
+
+contacts[0].onmouseover = () => contactIcons[0].style.backgroundImage = 'url("../personal-portfolio-page/img/icons/github-colour.svg")';
+contacts[1].onmouseover = () => contactIcons[1].style.backgroundImage = 'url("../personal-portfolio-page/img/icons/gmail-colour.svg")';
+
+contacts[0].onmouseout = () => contactIcons[0].style.backgroundImage = '';
+contacts[1].onmouseout = () => contactIcons[1].style.backgroundImage = '';

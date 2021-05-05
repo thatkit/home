@@ -394,6 +394,7 @@ div.contact {
 div.contact-icon-container {
     width: 2.25rem;
     margin-right: 2rem;
+    transition: background-image 300ms ease;
 }
 
 div.contact-icon-container.github {

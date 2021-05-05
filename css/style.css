@@ -177,7 +177,7 @@ button#CTA-cstyle {
 }
 
 button#CTA-cstyle:hover {
-    box-shadow: 0px 10px 30px #9C39C6;
+    box-shadow: none;
 }
 
 button#CTA-cstyle:active {

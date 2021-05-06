@@ -55,7 +55,7 @@ document.onclick = () => hightlightSet();
 
 // Hero first line changing text
 
-const firstLineArr = ['new', 'novice', 'neat'];
+const firstLineArr = ['ew', 'ovice', 'eat'];
 
 const changeFirstLine = i => {
     if (i < firstLineArr.length) {

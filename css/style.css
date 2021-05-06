@@ -21,8 +21,8 @@ html {
 body {
     width: 100vw;
     height: 3052px;
-    padding-left: 198px;
-    padding-right: 198px;
+    padding-left: 15%;
+    padding-right: 15%;
     background: url('./background-tile.png') #ffffff59;
     background-blend-mode: lighten;
     display: flex;
@@ -41,9 +41,9 @@ a {
 
 nav {
     font-family: 'Roboto Mono', monospace;
-    width: 1536px;
+    width: 100vw;
     height: 100px;
-    padding: 26px 198px;
+    padding: 26px 15%;
     position: fixed;
     z-index: 1;
     display: flex;
@@ -104,7 +104,7 @@ nav h4:active {
 /* Main */
 
 main {
-    width: calc(1536px - 396px);
+    width: 100%;
     position: relative;
     top: 100px;
 }

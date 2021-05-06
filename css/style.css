@@ -23,7 +23,7 @@ body {
     height: 3052px;
     padding-left: 198px;
     padding-right: 198px;
-    background: url('./background-tile.png') hsla(0, 0%, 100%, 0.35);
+    background: url('./background-tile.png') #ffffff59;
     background-blend-mode: lighten;
     display: flex;
     flex-flow: column nowrap;
@@ -41,14 +41,15 @@ a {
 
 nav {
     font-family: 'Roboto Mono', monospace;
-    width: calc(1536px - 396px);
+    width: 1536px;
     height: 100px;
-    padding: 26px 0;
+    padding: 26px 198px;
     position: fixed;
     z-index: 1;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    /*backdrop-filter: blur(0.45rem); for main.js */
 }
 
 nav h3 {
@@ -202,13 +203,11 @@ section#works > h3 {
 }
 
 div.works-card {
-    background-color: gray;
     width: 281px;
     height: 350px;
 }
 
 div.works-card-image-container {
-    background: #9C39C6;
     width: 100%;
     height: calc(100% / 2);
 }

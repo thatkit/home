@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    width: 1536px;
+    width: 100vw;
     height: 3052px;
     padding-left: 198px;
     padding-right: 198px;

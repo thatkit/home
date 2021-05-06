@@ -49,7 +49,6 @@ nav {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    /*backdrop-filter: blur(0.45rem); for main.js */
 }
 
 nav h3 {

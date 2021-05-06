@@ -144,7 +144,7 @@ header > h1 {
     text-transform: uppercase;
 }
 
-header > h1:first-line {
+header > h1::first-line {
     color: #C79F4E;
 }
 

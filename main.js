@@ -53,6 +53,23 @@ document.onwheel = () => hightlightSet();
 document.onmouseover = () => hightlightSet();
 document.onclick = () => hightlightSet();
 
+// Hero first line changing text
+
+const firstLineArr = ['new', 'novice', 'neat'];
+
+const changeFirstLine = i => {
+    if (i < firstLineArr.length) {
+        setTimeout(function() {
+            document.getElementById('hero-first-line').innerText = firstLineArr[i];
+            changeFirstLine(++i);
+        }, 1800);
+    } else if (i === firstLineArr.length) {
+        changeFirstLine(0);
+    }
+}
+
+changeFirstLine(0);
+
 // Works cards hover animation
 
 const workCards = document.getElementsByClassName('works-card');

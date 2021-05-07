@@ -119,6 +119,69 @@ div.menu-rect {
     margin-top: 0.25rem;
 }
 
+/*div.menu-rect:first-child.active {
+    transform: rotate(90deg);
+}*/
+
+/* Keyframes & Animation for menu icon */
+
+div.menu-rect:first-child.open {
+    animation: open-1 2000ms infinite;
+}
+
+div.menu-rect:nth-child(2).open {
+    animation: open-2 2000ms infinite;
+}
+
+div.menu-rect:last-child.open {
+    animation: open-3 2000ms infinite;
+}
+
+@keyframes open-1 {
+    0% {
+
+    }
+
+    50% {
+        transform: translateY(0.5rem);
+    }
+
+    100% {
+        transform: translateY(0.5rem);
+        transform: rotate(45deg);
+        transform-origin: 0 50%;
+    }
+}
+
+@keyframes open-2 {
+    0% {
+
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes open-3 {
+    0% {
+
+    }
+
+    50% {
+        transform: translateY(-0.5rem);
+    }
+
+    100% {
+        transform: rotate(-45deg);
+        transform-origin: 0 50%;
+    }
+}
+
 /* Main */
 
 main {

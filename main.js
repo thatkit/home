@@ -1,6 +1,6 @@
 /* Animations */
 
-// Navbar highlight
+// 1. Navbar highlight
 
 const worksHeading = document.getElementById('works-heading');
 const skillsHeading = document.getElementById('skills-heading');
@@ -53,22 +53,26 @@ document.onwheel = () => hightlightSet();
 document.onmouseover = () => hightlightSet();
 document.onclick = () => hightlightSet();
 
-// Navbar menu icon active effect
+// 2.1. Navbar menu icon active effect
 
 const menu = document.getElementById('menu-icon');
 const rectCol = document.getElementsByClassName('menu-rect');
+const rectArr = Array.from(rectCol);
 
-const colourMenuIcon = () => {
-    const rectArr = Array.from(rectCol);
-    rectArr.forEach(element => element.style.background = '#C79F4E');
+const colourMenuIcon = () => rectArr.forEach(element => element.style.background = '#C79F4E');
+const uncolourMenuIcon = () => rectArr.forEach(element => element.style.background = '');
+
+// 2.2. Navbar menu icon opening
+
+const openMenu = () => rectArr.forEach(element => element.classList.toggle('open'));
+
+// 2.3. Navbar functions calling
+
+menu.onmousedown = () => {
+    colourMenuIcon();
+    openMenu();
 }
 
-const uncolourMenuIcon = () => {
-    const rectArr = Array.from(rectCol);
-    rectArr.forEach(element => element.style.background = '');
-}
-
-menu.onmousedown = () => colourMenuIcon();
 menu.onmouseup = () => uncolourMenuIcon();
 
 // Hero first line changing text

@@ -119,10 +119,6 @@ div.menu-rect {
     margin: 0.25rem 0;
 }
 
-/*div.menu-rect:first-child.active {
-    transform: rotate(90deg);
-}*/
-
 /* Keyframes & Animation for menu icon */
 
 div.menu-rect:first-child.open {
@@ -550,7 +546,7 @@ footer {
         content: '.';
     }
 
-    nav > ul {
+    nav h4 {
         display: none;
     }
 

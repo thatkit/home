@@ -35,10 +35,12 @@ const highlight = el => {
         nav.style.color = '#C79F4E';
         nav.style.opacity = 1;
         nav.style.fontWeight = 'bold';
+        nav.style.display = 'block';
     } else {
         nav.style.color = '';
         nav.style.opacity = '';
         nav.style.fontWeight = '';
+        nav.style.display = '';
     }
 
 }
@@ -49,7 +51,7 @@ const hightlightSet = () => {
     highlight(contactsHeading);
 }
 
-document.onwheel = () => hightlightSet();
+document.onscroll = () => hightlightSet();
 document.onmouseover = () => hightlightSet();
 document.onclick = () => hightlightSet();
 

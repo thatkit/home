@@ -66,10 +66,6 @@ nav h3:hover {
     filter: none;
 }
 
-nav h3 > a {
-    height: auto;
-}
-
 nav > ul {
     display: flex;
 }
@@ -122,15 +118,15 @@ div.menu-rect {
 /* Keyframes & Animation for menu icon */
 
 div.menu-rect:first-child.open {
-    animation: open-1 1500ms forwards;
+    animation: open-1 1000ms forwards;
 }
 
 div.menu-rect:nth-child(2).open {
-    animation: open-2 2500ms forwards;
+    animation: open-2 1000ms forwards;
 }
 
 div.menu-rect:last-child.open {
-    animation: open-3 1500ms forwards;
+    animation: open-3 1000ms forwards;
 }
 
 @keyframes open-1 {
@@ -547,12 +543,51 @@ footer {
         content: '.';
     }
 
+    /*test*/
+    nav {
+        justify-content: flex-end;
+    }
+
+    nav > a {
+        margin-right: auto;
+    }
+
+    nav > ul {
+        background: hsla(280, 5%, 25%, 0.9);
+        width: 40%;
+        height: 300%;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    nav h4.opened::before {
+        content: '';
+        color: #413d4300;
+        text-decoration: underline #C79F4E;
+    }
+    /**/
+
     nav h4 {
-        display: none;
+        color: #ffffff; /*should be default*/
+        display: block; /*should be 'none'*/
     }
 
     div#menu-icon {
+        margin-left: 1rem;
         display: block;
+    }
+
+    /* Top section */
+
+    section#top {
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    button#CTA-cstyle {
+        width: 100%;
     }
 
 }

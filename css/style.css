@@ -116,7 +116,7 @@ div.menu-rect {
     background: #413D43;
     width: 1.5rem;
     height: 0.25rem;
-    margin-top: 0.25rem;
+    margin: 0.25rem 0;
 }
 
 /*div.menu-rect:first-child.active {
@@ -126,15 +126,15 @@ div.menu-rect {
 /* Keyframes & Animation for menu icon */
 
 div.menu-rect:first-child.open {
-    animation: open-1 2000ms infinite;
+    animation: open-1 2000ms forwards;
 }
 
 div.menu-rect:nth-child(2).open {
-    animation: open-2 2000ms infinite;
+    animation: open-2 2000ms forwards;
 }
 
 div.menu-rect:last-child.open {
-    animation: open-3 2000ms infinite;
+    animation: open-3 2000ms forwards;
 }
 
 @keyframes open-1 {
@@ -147,9 +147,8 @@ div.menu-rect:last-child.open {
     }
 
     100% {
-        transform: translateY(0.5rem);
         transform: rotate(45deg);
-        transform-origin: 0 50%;
+        transform-origin: 0 calc(50% - 0.1rem);
     }
 }
 
@@ -178,7 +177,7 @@ div.menu-rect:last-child.open {
 
     100% {
         transform: rotate(-45deg);
-        transform-origin: 0 50%;
+        transform-origin: 0 calc(50% + 0.1rem);
     }
 }
 

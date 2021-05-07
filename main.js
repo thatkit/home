@@ -68,14 +68,32 @@ const uncolourMenuIcon = () => rectArr.forEach(element => element.style.backgrou
 
 const openMenu = () => rectArr.forEach(element => element.classList.toggle('open'));
 
-// 2.3. Navbar functions calling
+// 2.3. Navbar menu opening
 
-menu.onmousedown = () => {
-    colourMenuIcon();
-    openMenu();
+const activeArr = [document.querySelector('nav'), document.querySelector('nav > a'), document.querySelector('nav > ul'), document.querySelectorAll('nav h4')];
+
+const activateMenu = item => item.classList.toggle('active');
+
+const openNav = () => {
+    activeArr.forEach(element => {
+        if (element.length > 0) {
+            element.forEach(el => activateMenu(el));
+        } else if (typeof element.length === 'undefined') {
+            activateMenu(element);
+        } else {
+            console.log('openNav() issue');
+        }
+    })
 }
 
+// 2.4. Navbar functions calling
+
+menu.onmousedown = () => colourMenuIcon();
 menu.onmouseup = () => uncolourMenuIcon();
+menu.onclick = () => {
+    openMenu();
+    openNav();
+}
 
 // Hero first line changing text
 

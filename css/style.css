@@ -544,16 +544,16 @@ footer {
     }
 
     /*test*/
-    nav {
+    nav.active {
         justify-content: flex-end;
     }
 
-    nav > a {
+    nav > a.active {
         margin-right: auto;
     }
 
-    nav > ul {
-        background: hsla(280, 5%, 25%, 0.9);
+    nav > ul.active {
+        background: hsl(280, 5%, 25%);
         width: 40%;
         height: 300%;
         flex-flow: column wrap;
@@ -561,16 +561,21 @@ footer {
         align-items: flex-start;
     }
 
-    nav h4.opened::before {
-        content: '';
+    nav h4.active::before {
+        content: '_';
         color: #413d4300;
         text-decoration: underline #C79F4E;
     }
+
+    nav h4.active {
+        color: #ffffff;
+        display: block;
+    }
+    
     /**/
 
     nav h4 {
-        color: #ffffff; /*should be default*/
-        display: block; /*should be 'none'*/
+        display: none;
     }
 
     div#menu-icon {

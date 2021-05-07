@@ -53,6 +53,24 @@ document.onwheel = () => hightlightSet();
 document.onmouseover = () => hightlightSet();
 document.onclick = () => hightlightSet();
 
+// Navbar menu icon active effect
+
+const menu = document.getElementById('menu-icon');
+const rectCol = document.getElementsByClassName('menu-rect');
+
+const colourMenuIcon = () => {
+    const rectArr = Array.from(rectCol);
+    rectArr.forEach(element => element.style.background = '#C79F4E');
+}
+
+const uncolourMenuIcon = () => {
+    const rectArr = Array.from(rectCol);
+    rectArr.forEach(element => element.style.background = '');
+}
+
+menu.onmousedown = () => colourMenuIcon();
+menu.onmouseup = () => uncolourMenuIcon();
+
 // Hero first line changing text
 
 const firstLineArr = ['ew', 'ovice', 'eat'];

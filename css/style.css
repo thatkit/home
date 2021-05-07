@@ -122,15 +122,15 @@ div.menu-rect {
 /* Keyframes & Animation for menu icon */
 
 div.menu-rect:first-child.open {
-    animation: open-1 2000ms forwards;
+    animation: open-1 1500ms forwards;
 }
 
 div.menu-rect:nth-child(2).open {
-    animation: open-2 2000ms forwards;
+    animation: open-2 2500ms forwards;
 }
 
 div.menu-rect:last-child.open {
-    animation: open-3 2000ms forwards;
+    animation: open-3 1500ms forwards;
 }
 
 @keyframes open-1 {
@@ -532,6 +532,7 @@ footer {
 }
 
 /* Media queries */
+
 /* Desktop */
 
 @media screen and (max-width: 1080px) /*and (orientation: landscape)*/ {

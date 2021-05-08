@@ -319,7 +319,7 @@ section#works {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -332,6 +332,14 @@ section#works > h3 {
 div.works-card {
     width: 281px;
     height: 350px;
+}
+
+div.works-card:not(:nth-child(2)) {
+    margin-left: 1rem;
+}
+
+div.works-card:last-child {
+    margin-right: 0;
 }
 
 div.works-card-image-container {
@@ -585,7 +593,7 @@ footer {
 
 /* Media queries */
 
-/* Desktop */
+/* Smaller than Desktop (small laptops) */
 
 @media screen and (max-width: 1080px) /*and (orientation: landscape)*/ {
 

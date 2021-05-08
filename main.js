@@ -111,7 +111,7 @@ menu.onclick = () => {
     toggleMenu();
 }
 
-// Hero first line changing text
+// 3. Hero first line changing text
 
 const firstLineArr = ['ew', 'ovice', 'eat'];
 
@@ -128,7 +128,7 @@ const changeFirstLine = i => {
 
 changeFirstLine(0);
 
-// Works cards hover animation
+// 4. Works cards hover animation
 
 const workCards = document.getElementsByClassName('works-card');
 const colouringFilm = document.getElementsByClassName('colouring-film');
@@ -141,7 +141,7 @@ workCards[0].onmouseout = () => colouringFilm[0].style.opacity = '';
 workCards[1].onmouseout = () => colouringFilm[1].style.opacity = '';
 workCards[2].onmouseout = () => colouringFilm[2].style.opacity = '';
 
-// Skills cards hover animation
+// 5. Skills cards hover animation
 
 const skillCards = document.getElementsByClassName('skills-card');
 const skillIcons = document.getElementsByClassName('skills-card-icon-container');
@@ -187,7 +187,7 @@ skillCards[2].onmouseout = () => {
     }
 }
 
-// Contacts hover animation
+// 6. Contacts hover animation
 
 const contacts = document.getElementsByClassName('contact');
 const contactIcons = document.getElementsByClassName('contact-icon-container');

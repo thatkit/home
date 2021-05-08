@@ -1,6 +1,6 @@
 /* Animations */
 
-// Navbar highlight
+// 1. Navbar highlight
 
 const worksHeading = document.getElementById('works-heading');
 const skillsHeading = document.getElementById('skills-heading');
@@ -35,10 +35,12 @@ const highlight = el => {
         nav.style.color = '#C79F4E';
         nav.style.opacity = 1;
         nav.style.fontWeight = 'bold';
+        nav.style.display = 'block';
     } else {
         nav.style.color = '';
         nav.style.opacity = '';
         nav.style.fontWeight = '';
+        nav.style.display = '';
     }
 
 }
@@ -49,11 +51,67 @@ const hightlightSet = () => {
     highlight(contactsHeading);
 }
 
-document.onwheel = () => hightlightSet();
+document.onscroll = () => hightlightSet();
 document.onmouseover = () => hightlightSet();
 document.onclick = () => hightlightSet();
 
-// Hero first line changing text
+// 2.1. Navbar menu icon active effect
+
+const menu = document.getElementById('menu-icon');
+const rectCol = document.getElementsByClassName('menu-rect');
+const rectArr = Array.from(rectCol);
+
+const colourMenuIcon = () => rectArr.forEach(element => element.style.background = '#C79F4E');
+const uncolourMenuIcon = () => rectArr.forEach(element => element.style.background = '');
+
+// 2.2. Navbar menu icon opening and closing
+
+const toggleMenuIcon = () => rectArr.forEach(element => {
+    if (!element.classList.contains('open')) {
+        element.classList.add('open');
+        element.classList.remove('close');
+    } else if (!element.classList.contains('close')) {
+        element.classList.add('close');
+        element.classList.remove('open');
+    }
+});
+
+// 2.3. Navbar menu opening
+
+const activeArr = [document.querySelector('nav'), document.querySelector('nav > a'), document.querySelector('nav > ul'), document.querySelectorAll('nav h4')];
+
+const openAndCloseMenu = item => {
+    if (!item.classList.contains('active')) {
+        item.classList.add('active');
+        item.classList.remove('inactive');
+    } else if (!item.classList.contains('inactive')) {
+        item.classList.add('inactive');
+        item.classList.remove('active');
+    }
+};
+
+const toggleMenu = () => {
+    activeArr.forEach(element => {
+        if (element.length > 0) {
+            element.forEach(el => openAndCloseMenu(el));
+        } else if (typeof element.length === 'undefined') {
+            openAndCloseMenu(element);
+        } else {
+            console.log('toggleMenu() issue');
+        }
+    })
+}
+
+// 2.4. Navbar functions calling
+
+menu.onmousedown = () => colourMenuIcon();
+menu.onmouseup = () => uncolourMenuIcon();
+menu.onclick = () => {
+    toggleMenuIcon();
+    toggleMenu();
+}
+
+// 3. Hero first line changing text
 
 const firstLineArr = ['ew', 'ovice', 'eat'];
 
@@ -70,7 +128,7 @@ const changeFirstLine = i => {
 
 changeFirstLine(0);
 
-// Works cards hover animation
+// 4. Works cards hover animation
 
 const workCards = document.getElementsByClassName('works-card');
 const colouringFilm = document.getElementsByClassName('colouring-film');
@@ -83,7 +141,7 @@ workCards[0].onmouseout = () => colouringFilm[0].style.opacity = '';
 workCards[1].onmouseout = () => colouringFilm[1].style.opacity = '';
 workCards[2].onmouseout = () => colouringFilm[2].style.opacity = '';
 
-// Skills cards hover animation
+// 5. Skills cards hover animation
 
 const skillCards = document.getElementsByClassName('skills-card');
 const skillIcons = document.getElementsByClassName('skills-card-icon-container');
@@ -129,7 +187,7 @@ skillCards[2].onmouseout = () => {
     }
 }
 
-// Contacts hover animation
+// 6. Contacts hover animation
 
 const contacts = document.getElementsByClassName('contact');
 const contactIcons = document.getElementsByClassName('contact-icon-container');

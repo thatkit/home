@@ -82,14 +82,14 @@ const activeArr = [document.querySelector('nav'), document.querySelector('nav > 
 
 const openAndCloseMenu = item => item.classList.add('active');
 
-const openNav = () => {
+const toggleMenu = () => {
     activeArr.forEach(element => {
         if (element.length > 0) {
             element.forEach(el => openAndCloseMenu(el));
         } else if (typeof element.length === 'undefined') {
             openAndCloseMenu(element);
         } else {
-            console.log('openNav() issue');
+            console.log('toggleMenu() issue');
         }
     })
 }
@@ -100,7 +100,7 @@ menu.onmousedown = () => colourMenuIcon();
 menu.onmouseup = () => uncolourMenuIcon();
 menu.onclick = () => {
     toggleMenuIcon();
-    openNav();
+    toggleMenu();
 }
 
 // Hero first line changing text

@@ -485,11 +485,11 @@ div.level-fraction > span {
 
 section#contacts {
     width: 100%;
-    height: calc(100vh - 10rem);
+    height: 100vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
 div.contact-card {
@@ -589,6 +589,8 @@ footer {
     vertical-align: middle;
     width: 100%;
     height: 2rem;
+    position: relative;
+    top: 2rem;
 }
 
 /* Media queries */

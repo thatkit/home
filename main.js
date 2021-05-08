@@ -64,22 +64,30 @@ const rectArr = Array.from(rectCol);
 const colourMenuIcon = () => rectArr.forEach(element => element.style.background = '#C79F4E');
 const uncolourMenuIcon = () => rectArr.forEach(element => element.style.background = '');
 
-// 2.2. Navbar menu icon opening
+// 2.2. Navbar menu icon opening and closing
 
-const openMenu = () => rectArr.forEach(element => element.classList.toggle('open'));
+const toggleMenuIcon = () => rectArr.forEach(element => {
+    if (!element.classList.contains('open')) {
+        element.classList.add('open');
+        element.classList.remove('close');
+    } else if (!element.classList.contains('close')) {
+        element.classList.add('close');
+        element.classList.remove('open');
+    }
+});
 
 // 2.3. Navbar menu opening
 
 const activeArr = [document.querySelector('nav'), document.querySelector('nav > a'), document.querySelector('nav > ul'), document.querySelectorAll('nav h4')];
 
-const activateMenu = item => item.classList.toggle('active');
+const openAndCloseMenu = item => item.classList.add('active');
 
 const openNav = () => {
     activeArr.forEach(element => {
         if (element.length > 0) {
-            element.forEach(el => activateMenu(el));
+            element.forEach(el => openAndCloseMenu(el));
         } else if (typeof element.length === 'undefined') {
-            activateMenu(element);
+            openAndCloseMenu(element);
         } else {
             console.log('openNav() issue');
         }
@@ -91,7 +99,7 @@ const openNav = () => {
 menu.onmousedown = () => colourMenuIcon();
 menu.onmouseup = () => uncolourMenuIcon();
 menu.onclick = () => {
-    openMenu();
+    toggleMenuIcon();
     openNav();
 }
 

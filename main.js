@@ -80,7 +80,15 @@ const toggleMenuIcon = () => rectArr.forEach(element => {
 
 const activeArr = [document.querySelector('nav'), document.querySelector('nav > a'), document.querySelector('nav > ul'), document.querySelectorAll('nav h4')];
 
-const openAndCloseMenu = item => item.classList.add('active');
+const openAndCloseMenu = item => {
+    if (!item.classList.contains('active')) {
+        item.classList.add('active');
+        item.classList.remove('inactive');
+    } else if (!item.classList.contains('inactive')) {
+        item.classList.add('inactive');
+        item.classList.remove('active');
+    }
+};
 
 const toggleMenu = () => {
     activeArr.forEach(element => {

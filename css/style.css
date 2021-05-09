@@ -644,8 +644,9 @@ footer {
     nav > ul.active {
         background: hsl(280, 5%, 25%, 0.75);
         width: 40%;
-        height: 300%;
-        flex-flow: column wrap;
+        height: 400%;
+        padding: 5% 0;
+        flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: flex-start;
         transition: background-color 300ms ease;

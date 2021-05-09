@@ -197,3 +197,19 @@ contacts[1].onmouseover = () => contactIcons[1].style.backgroundImage = 'url("..
 
 contacts[0].onmouseout = () => contactIcons[0].style.backgroundImage = '';
 contacts[1].onmouseout = () => contactIcons[1].style.backgroundImage = '';
+
+/* Responsive behaviour */
+
+// JS and Figma skill icons swap
+
+const jsToFigma = document.getElementsByClassName('skills-card-icon-container js')[0];
+const figmaToJs = document.getElementsByClassName('skills-card-icon-container js-m')[0];
+
+if (window.innerWidth <= 1080) {
+    jsToFigma.classList.remove('js');
+    jsToFigma.classList.add('figma');
+    figmaToJs.classList.remove('js-m');
+    figmaToJs.classList.add('js');
+} else {
+    console.log('window.innerWidth is above 1080px')
+}

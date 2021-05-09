@@ -501,6 +501,10 @@ div.level-fraction-m:last-child {
     background: #DAC08B;
 }
 
+span.mobile-only-span {
+    display: none;
+}
+
 /* Contacts section */
 
 section#contacts {
@@ -685,6 +689,18 @@ footer {
 
     /* Skills section */
 
+    #skills-container {
+        justify-content: space-around;
+    }
+
+    /*div.skills-card {
+        justify-content: flex-start;
+    }*/
+
+    div.skills-card:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
     div.skills-card-level {
         display: none;
     }
@@ -692,5 +708,13 @@ footer {
     div.skills-card-level-m {
         display: flex;
     }
+
+    div.skills-card:last-child {
+        display: none;
+    }
+    
+    span.mobile-only-span {
+        display: inline;
+    }    
 
 }

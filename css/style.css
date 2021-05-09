@@ -688,17 +688,28 @@ footer {
     }
 
     /* Skills section */
+    
+    section#skills {
+        display: flex;
+        align-items: center;
+    }
 
     #skills-container {
+        height: 50%;
+        margin-top: 25%;
         justify-content: space-around;
     }
 
-    /*div.skills-card {
+    div.skills-card {
         justify-content: flex-start;
-    }*/
+    }
 
     div.skills-card:nth-child(even) {
         flex-direction: row-reverse;
+    }
+
+    div.skills-card-icon-container:nth-child(2) {
+        margin: 0 2rem;
     }
     
     div.skills-card-level {

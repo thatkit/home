@@ -481,6 +481,26 @@ div.level-fraction > span {
     font-weight: 600;
 }
 
+div.skills-card-level-m {
+    width: 54px;
+    height: calc((0.5rem + 0.625rem) * 6);
+    position: relative;
+    bottom: calc((0.5rem + 0.625rem) * 7);
+    display: none;
+    flex-flow: column-reverse nowrap;
+}
+
+div.level-fraction-m {
+    background: #C79F4E;
+    width: 100%;
+    height: 0.625rem;
+    margin-bottom: 0.5rem;
+}
+
+div.level-fraction-m:last-child {
+    background: #DAC08B;
+}
+
 /* Contacts section */
 
 section#contacts {
@@ -665,8 +685,12 @@ footer {
 
     /* Skills section */
 
-    div.skills-card-description > p {
+    div.skills-card-level {
         display: none;
+    }
+
+    div.skills-card-level-m {
+        display: flex;
     }
 
 }

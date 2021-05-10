@@ -42,7 +42,7 @@ a {
 nav {
     font-family: 'Roboto Mono', monospace;
     width: 100vw;
-    height: 100px;
+    height: 4.167rem;
     padding: 26px 15%;
     position: fixed;
     z-index: 1;
@@ -78,7 +78,7 @@ nav h4 {
     line-height: 1.67rem;
     letter-spacing: 0.1rem;
     text-transform: lowercase;
-    margin-left: 44px;
+    margin-left: 1.5rem;
     transition: text-decoration 100ms ease, opacity 100ms ease;
 }
 
@@ -229,12 +229,16 @@ div.menu-rect:last-child.close {
     }
 }
 
+span#dot {
+    display: none;
+}
+
 /* Main */
 
 main {
     width: 100%;
     position: relative;
-    top: 100px;
+    top: 4.167rem;
 }
 
 section > h3 {
@@ -251,7 +255,7 @@ section#contacts > h3 {
 
 section#top {
     width: 100%;
-    height: calc(100vh - 100px - 194px);
+    height: calc(100vh - 4.167rem - 194px);
     padding: 0;
     margin-bottom: 194px;
     display: flex;
@@ -619,9 +623,15 @@ footer {
 
 /* Media queries */
 
-/* Smaller than Desktop (small laptops) */
+/* Small Laptops */
 
-@media screen and (max-width: 1080px) /*and (orientation: landscape)*/ {
+@media screen and (max-width: 1024px) {
+    
+    /* Global Styles */
+
+    html {
+        font-size: 20px;
+    }
 
     /* Navbar */
 
@@ -632,6 +642,17 @@ footer {
     nav h3::after {
         content: '.';
     }
+
+
+}
+
+/* Smaller Laptops */
+
+/* Tablets */
+
+@media screen and (max-width: 768px) {
+
+    /* Navbar */
 
     nav.active {
         justify-content: flex-end;
@@ -728,5 +749,31 @@ footer {
     span.mobile-only-span {
         display: inline;
     }    
+
+}
+
+/* Mobile L */
+
+@media screen and (max-width: 425px) {
+    
+    /* Global Styles */
+
+    html {
+        font-size: 18px;
+    }
+
+    /* Navbar */
+
+    nav > ul.active {
+        width: 70vw;
+        height: 200%;
+        position: absolute;
+        top: 80px;
+        float: right;
+    }
+
+    nav h4 {
+        margin-left: 1rem;
+    }
 
 }

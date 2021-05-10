@@ -256,7 +256,7 @@ section#contacts > h3 {
 
 section#top {
     width: 100%;
-    height: calc(100vh - 4.167rem - 7rem);
+    height: calc(100vh);
     padding: 0;
     margin-bottom: 7rem;
     display: flex;
@@ -265,7 +265,7 @@ section#top {
 }
 
 header {
-    padding-top: 194px;
+    padding-top: 7rem;
 }
 
 header > h1 {

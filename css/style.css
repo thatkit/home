@@ -683,7 +683,11 @@ footer {
 
     br.contact-break {
         display: none;
-    }    
+    }
+
+    div.contact > a {
+        font-size: 0.8rem;
+    }
 
 }
 

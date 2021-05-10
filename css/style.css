@@ -524,8 +524,9 @@ section#contacts {
 div.contact-card {
     background: #DAC08B;
     width: 13.75rem;
+    min-width: 13rem;
     height: 11.67rem;
-    padding: 0 1.67rem;
+    padding: 0 1.5rem;
 }
 
 div.contact-card-image-container {
@@ -559,8 +560,11 @@ div.contact-card-description > p {
 }
 
 div.contact-card-contacts {
+    height: 11.67rem;
+    margin-left: 2rem;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: flex-end;
 }
 
 div.contact {
@@ -674,6 +678,12 @@ footer {
         z-index: 0;
         justify-content: center;
     }
+
+    /* Contacts section */
+
+    br.contact-break {
+        display: none;
+    }    
 
 }
 

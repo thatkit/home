@@ -839,3 +839,15 @@ footer {
     }
 
 }
+
+/* Mobile S */
+
+@media screen and (max-width: 320px) {
+
+    /* Global styles */
+
+    html {
+        font-size: 16px;
+    }
+
+}

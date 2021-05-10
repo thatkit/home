@@ -707,7 +707,7 @@ footer {
 
     nav > ul.active {
         background: hsl(280, 5%, 25%, 0.75);
-        width: 40%;
+        width: 10rem;
         height: 8rem;
         padding: 5% 0;
         flex-flow: column nowrap;
@@ -792,7 +792,23 @@ footer {
     
     span.mobile-only-span {
         display: inline;
-    }    
+    }
+
+    /* Contacts section */
+
+    section#contacts {
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    div.contact-card-contacts {
+        height: auto;
+        flex-flow: row nowrap;
+    }
+
+    div.contact > a {
+        display: none;
+    }
 
 }
 

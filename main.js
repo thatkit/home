@@ -5,13 +5,13 @@
 const jsToFigma = document.getElementsByClassName('skills-card-icon-container js')[0];
 const figmaToJs = document.getElementsByClassName('skills-card-icon-container js-m')[0];
 
-if (window.innerWidth <= 1080) {
+if (window.innerWidth <= 768) {
     jsToFigma.classList.remove('js');
     jsToFigma.classList.add('figma');
     figmaToJs.classList.remove('js-m');
     figmaToJs.classList.add('js');
 } else {
-    console.log('window.innerWidth is above 1080px')
+    console.log('window.innerWidth is above 768px')
 }
 
 /* Animations */
@@ -164,21 +164,21 @@ const skillIcons = document.getElementsByClassName('skills-card-icon-container')
 const skillLevels = document.getElementsByClassName('level-fraction');
 
 skillCards[0].onmouseover = () => {
-    skillIcons[0].style.background = 'url("../personal-portfolio-page/img/icons/html-colour.svg")';
-    skillIcons[1].style.background = 'url("../personal-portfolio-page/img/icons/css-colour.svg")';
+    skillIcons[0].style.background = 'url("../personal-portfolio-page/img/icons/html-colour.svg") center/100% no-repeat';
+    skillIcons[1].style.background = 'url("../personal-portfolio-page/img/icons/css-colour.svg") center/100% no-repeat';
     for (let i = 0; i < 7; i++) {
         skillLevels[i].style.background = '#C79F4E00';
     }
 }
 skillCards[1].onmouseover = () => {
     if (skillIcons[2].classList.contains('js') && skillIcons[3].classList.contains('figma')) {
-        skillIcons[2].style.background = 'url("../personal-portfolio-page/img/icons/js-colour.svg")';
-        skillIcons[3].style.background = 'url("../personal-portfolio-page/img/icons/figma-colour.svg")';
+        skillIcons[2].style.background = 'url("../personal-portfolio-page/img/icons/js-colour.svg") center/100% no-repeat';
+        skillIcons[3].style.background = 'url("../personal-portfolio-page/img/icons/figma-colour.svg") center/100% no-repeat';
     } else if (skillIcons[2].classList.contains('figma') && skillIcons[3].classList.contains('js')) {
-        skillIcons[2].style.background = 'url("../personal-portfolio-page/img/icons/figma-colour.svg")';
-        skillIcons[3].style.background = 'url("../personal-portfolio-page/img/icons/js-colour.svg")';
+        skillIcons[2].style.background = 'url("../personal-portfolio-page/img/icons/figma-colour.svg") center/100% no-repeat';
+        skillIcons[3].style.background = 'url("../personal-portfolio-page/img/icons/js-colour.svg") center/100% no-repeat';
     } else if (skillIcons[2].classList.contains('js')) {
-        skillIcons[2].style.background = 'url("../personal-portfolio-page/img/icons/js-colour.svg")';
+        skillIcons[2].style.background = 'url("../personal-portfolio-page/img/icons/js-colour.svg") center/100% no-repeat';
     } else {
         console.log('skillCards[1].onmouseover broke')
     }
@@ -188,7 +188,7 @@ skillCards[1].onmouseover = () => {
     }
 }
 skillCards[2].onmouseover = () => {
-    skillIcons[4].style.background = 'url("../personal-portfolio-page/img/icons/figma-colour.svg")';
+    skillIcons[4].style.background = 'url("../personal-portfolio-page/img/icons/figma-colour.svg") center/100% no-repeat';
     for (let i = 13; i < 19; i++) {
         skillLevels[i].style.background = '#C79F4E00';
     }

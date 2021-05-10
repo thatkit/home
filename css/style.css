@@ -256,9 +256,9 @@ section#contacts > h3 {
 
 section#top {
     width: 100%;
-    height: calc(100vh - 4.167rem - 194px);
+    height: calc(100vh - 4.167rem - 7rem);
     padding: 0;
-    margin-bottom: 194px;
+    margin-bottom: 7rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

@@ -591,7 +591,7 @@ div.contact-icon-container.gmail {
     height: 2.25rem;
 }
 
-div.contact > a {
+div.contact > a.contact-full-url {
     font-size: 1rem;
     font-style: normal;
     font-weight: normal;
@@ -601,11 +601,11 @@ div.contact > a {
     transition: color 100ms ease;
 }
 
-div.contact > a:hover {
+div.contact > a.contact-full-url:hover {
     text-decoration: none;
 }
 
-div.contact > a:active {
+div.contact > a.contact-full-url:active {
     color: #C79F4E;
 }
 
@@ -806,7 +806,7 @@ footer {
         flex-flow: row nowrap;
     }
 
-    div.contact > a {
+    div.contact > a.contact-full-url {
         display: none;
     }
 

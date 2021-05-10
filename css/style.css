@@ -256,16 +256,16 @@ section#contacts > h3 {
 
 section#top {
     width: 100%;
-    height: calc(100vh - 7rem - 5rem);
+    height: calc(100vh - 8rem - 4rem);
     padding: 0;
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
 header {
-    padding-top: 7rem;
+    padding-top: 8rem;
 }
 
 header > h1 {

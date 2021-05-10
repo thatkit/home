@@ -58,6 +58,7 @@ nav h3 {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     color: #9C39C6;
+    white-space: nowrap;
     filter: drop-shadow(0px 0px 5px #9c39c680);
     transition: filter 300ms ease;
 }
@@ -732,6 +733,7 @@ footer {
     }
 
     nav h4 {
+        margin-left: 1rem;
         display: none;
     }
 

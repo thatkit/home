@@ -159,6 +159,13 @@ div.contact-card {
     transition: all 700ms ease;
 }
 
+div.contact-card-image-container {
+    box-shadow: 0rem 0.25rem 1.25rem #9c39c640;
+    backdrop-filter: blur(2px);
+    border: 1px solid #ffffff1a;
+    transition: all 700ms ease;
+}
+
 div.contact-card:hover {
     filter: drop-shadow(0 0.5rem 1rem #9c39c638);
     box-shadow: 0rem 0.25rem 2rem #9c39c638;
@@ -202,6 +209,59 @@ div.contact:hover {
 
     div.works-card-text-container {
         color: #413D43;
+    }
+
+}
+
+/* Tablets */
+
+@media screen and (max-width: 768px) {
+
+    /* Navbar */
+
+    nav.active > ul {
+        background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
+        box-shadow: 0rem 0.25rem 1.25rem #9c39c640;
+        backdrop-filter: blur(2px);
+        opacity: 0.8;
+        border: 1px solid #ffffff1a;
+        border-radius: 2rem;
+        align-items: center;
+        transition: all 700ms ease;
+    }
+
+    nav.active > ul:hover {
+        filter: drop-shadow(0 0.5rem 1rem #9c39c638);
+        box-shadow: 0rem 0.25rem 2rem #9c39c638;
+        opacity: 1;
+    }
+
+    /* Top Section */
+
+    header {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    button#CTA-cstyle {
+        margin-right: 0;
+    }
+
+    /* Contacts Section */
+
+    div.contact-card-contacts {
+        margin-left: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    div.contact-card {
+        width: 100%;
+        justify-content: center;
+    }
+
+    div.contact-icon-container {
+        margin: 0;
     }
 
 }

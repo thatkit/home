@@ -149,3 +149,59 @@ section#contacts {
     padding: 0 4rem 0 calc(4rem - 1.5rem);
 }
 
+div.contact-card {
+    background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
+    box-shadow: 0rem 0.25rem 1.25rem #9c39c640;
+    backdrop-filter: blur(2px);
+    opacity: 0.8;
+    border: 1px solid #ffffff1a;
+    border-radius: 2rem;
+    transition: all 700ms ease;
+}
+
+div.contact-card:hover {
+    filter: drop-shadow(0 0.5rem 1rem #9c39c638);
+    box-shadow: 0rem 0.25rem 2rem #9c39c638;
+    opacity: 1;
+}
+
+div.contact {
+    background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
+    box-shadow: 0rem 0.25rem 1.25rem #9c39c640;
+    backdrop-filter: blur(2px);
+    opacity: 0.8;
+    border: 1px solid #ffffff1a;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    align-items: center;
+    transition: all 700ms ease;
+}
+
+div.contact:hover {
+    filter: drop-shadow(0 0.5rem 1rem #9c39c638);
+    box-shadow: 0rem 0.25rem 2rem #9c39c638;
+    opacity: 1;
+}
+
+/* Media queries */
+
+/* Small Laptops */
+
+@media screen and (max-width: 1024px) {
+
+    /* Works Section */
+
+    div.works-card {
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    div.works-card-image-container {
+        height: 3rem;
+    }
+
+    div.works-card-text-container {
+        color: #413D43;
+    }
+
+}

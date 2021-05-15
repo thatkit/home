@@ -2,7 +2,7 @@
 
 nav {
     background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
-    filter: drop-shadow(0 4px 4px #dbbdeb33);
+    filter: drop-shadow(0 0.25rem 1.5rem #9c39c6cc);
     backdrop-filter: blur(3px);
     border-bottom: 1px solid #ffffff1a;
 }
@@ -10,7 +10,6 @@ nav {
 nav > ul.active {
     background: linear-gradient(to left bottom, #9c39c64d, #413d4300);
     /*filter: drop-shadow(0 4px 4px hsla(280, 53%, 83%, 0.2));*/
-    border: 1px solid #f5ebf91a;
     border-radius: 1rem;
     backdrop-filter: blur(1rem);
 }

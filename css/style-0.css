@@ -707,7 +707,7 @@ footer {
     }
 
     nav > ul.active {
-        background: hsl(280, 5%, 25%, 0.75);
+        background: hsla(280, 5%, 25%, 0.75);
         width: 10rem;
         height: 8rem;
         padding: 5% 0;
@@ -718,7 +718,7 @@ footer {
     }
 
     nav > ul.active:hover {
-        background: hsl(280, 5%, 25%, 1);
+        background: #413d43;
     }
 
     nav h4.active::before {

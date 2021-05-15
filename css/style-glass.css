@@ -219,17 +219,6 @@ div.contact:hover {
 
     /* Navbar */
 
-    nav.active > ul {
-        background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
-        box-shadow: 0rem 0.25rem 1.25rem #9c39c640;
-        backdrop-filter: blur(2px);
-        opacity: 0.8;
-        border: 1px solid #ffffff1a;
-        border-radius: 2rem;
-        align-items: center;
-        transition: all 700ms ease;
-    }
-
     nav.active > ul:hover {
         filter: drop-shadow(0 0.5rem 1rem #9c39c638);
         box-shadow: 0rem 0.25rem 2rem #9c39c638;
@@ -245,6 +234,20 @@ div.contact:hover {
 
     button#CTA-cstyle {
         margin-right: 0;
+    }
+
+    /* Skills Section */
+
+    div.skills-card-level-m {
+        background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
+        box-shadow: 0rem 0.25rem 1.25rem #9c39c640;
+        backdrop-filter: blur(2px);
+        border: 1px solid #ffffff1a;
+        border-radius: 2rem;
+        padding: 0.5rem;
+        z-index: 1;
+        align-items: center;
+        transition: all 700ms ease;
     }
 
     /* Contacts Section */

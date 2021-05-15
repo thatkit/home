@@ -265,3 +265,46 @@ div.contact:hover {
     }
 
 }
+
+/* Mobile L */
+
+@media screen and (max-width: 425px) {
+
+    /* Global Styles */
+
+    body {
+        padding: 0 3rem;
+    }
+
+    /* Navbar */
+
+    nav {
+        padding: 1rem 3rem;
+    }
+
+    /* Skills */
+
+    div.skills-card-description {
+        display: none;
+    }
+
+    /* Contacts Sections */
+
+    section#contacts {
+        padding: 0;
+    }
+
+    div.contact-card-contacts {
+        width: 100%;
+    }
+
+    div.contact-card {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    div.contact-icon-container {
+        margin: 0;
+    }
+
+}

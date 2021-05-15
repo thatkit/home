@@ -8,15 +8,17 @@ body {
 
 nav {
     background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
-    filter: drop-shadow(0 0.25rem 2.5rem #9c39c68c);
+    box-shadow: 0rem 0.25rem 1.25rem #9c39c640;
     backdrop-filter: blur(4px);
+    opacity: 0.8;
     border-bottom: 1px solid #ffffff1a;
     padding: 1rem calc(6.5rem + 4rem);
-    transition: filter 700ms ease;
+    transition: all 700ms ease;
 }
 
 nav:hover {
     filter: drop-shadow(0 0.5rem 1rem #9c39c6);
+    opacity: 1;
 }
 
 nav > ul.active {
@@ -39,14 +41,32 @@ nav h4.active {
 
 header {
     background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
-    filter: drop-shadow(0 0.25rem 2.5rem #9c39c68c);
+    box-shadow: 0rem 0.25rem 1.25rem #9c39c640;
     backdrop-filter: blur(2px);
+    opacity: 0.8;
     border: 1px solid #ffffff1a;
-    border-radius: 1rem;
+    border-radius: 2rem;
     padding: 2rem 4rem;
-    transition: filter 700ms ease;
+    transition: all 700ms ease;
 }
 
 header:hover {
     filter: drop-shadow(0 0.5rem 1rem #9c39c6);
+    opacity: 1;
+}
+
+button#CTA-cstyle {
+    color: #9c39c6;
+    background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
+    box-shadow: 0rem 0.25rem 1.25rem #9c39c6;
+    backdrop-filter: blur(2px);
+    opacity: 0.8;
+    border: 1px solid #ffffff1a;
+    border-radius: 2rem;
+    margin-right: 4rem;
+    transition: all 700ms ease;
+}
+
+button#CTA-cstyle:hover {
+    opacity: 1;
 }

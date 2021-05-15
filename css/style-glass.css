@@ -65,7 +65,7 @@ button#CTA-cstyle {
     opacity: 0.8;
     border: 1px solid #ffffff1a;
     border-radius: 2rem;
-    margin-right: 4rem;
+    margin-right: calc(4rem - 1.67rem);
     transition: all 700ms ease;
 }
 
@@ -142,3 +142,10 @@ div.skills-card:hover {
 div.skills-card-icon-container {
     filter: drop-shadow(0 0.25rem 0.25rem #9c39c638);
 }
+
+/* Contacts Section */
+
+section#contacts {
+    padding: 0 4rem 0 calc(4rem - 1.5rem);
+}
+

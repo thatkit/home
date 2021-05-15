@@ -70,3 +70,42 @@ button#CTA-cstyle {
 button#CTA-cstyle:hover {
     opacity: 1;
 }
+
+/* Works Section */
+
+section#works {
+    padding: 0 4rem;
+}
+
+div.works-card {
+    border-radius: 2rem;
+    background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
+    opacity: 0.8;
+    border: 1px solid #ffffff1a;
+    backdrop-filter: blur(2px);
+    box-shadow: 0rem 0.25rem 1.25rem #9c39c640;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+div.works-card-image-container {
+    background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
+    backdrop-filter: blur(2px);
+    opacity: 0.8;
+    border: 1px solid #ffffff1a;
+    transition: all 700ms ease;
+    border-radius: 2rem;
+    width: 80%;
+    margin-top: 1rem;
+}
+
+div.works-card-text-container {
+    background: none;
+    border-radius: 0 0 2rem 2rem;
+}
+
+div.colouring-film {
+    backdrop-filter: blur(2px);
+    border-radius: 2rem;
+}

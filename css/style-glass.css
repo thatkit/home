@@ -138,3 +138,7 @@ div.skills-card:hover {
     box-shadow: 0rem 0.25rem 2rem #9c39c638;
     opacity: 1;
 }
+
+div.skills-card-icon-container {
+    filter: drop-shadow(0 0.25rem 0.25rem #9c39c638);
+}

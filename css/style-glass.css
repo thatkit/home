@@ -1,10 +1,22 @@
+/* Global Styles */
+
+body {
+    background: url('./background-tile.png');
+}
+
 /* Navbar */
 
 nav {
     background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
-    filter: drop-shadow(0 0.25rem 1.5rem #9c39c6cc);
-    backdrop-filter: blur(3px);
+    filter: drop-shadow(0 0.25rem 2.5rem #9c39c68c);
+    backdrop-filter: blur(4px);
     border-bottom: 1px solid #ffffff1a;
+    padding: 1rem calc(6.5rem + 4rem);
+    transition: filter 700ms ease;
+}
+
+nav:hover {
+    filter: drop-shadow(0 0.5rem 1rem #9c39c6);
 }
 
 nav > ul.active {
@@ -21,4 +33,20 @@ nav > ul.active:hover {
 nav h4.active {
     color: #413D43;
     font-weight: bold;
+}
+
+/* Top Section */
+
+header {
+    background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
+    filter: drop-shadow(0 0.25rem 2.5rem #9c39c68c);
+    backdrop-filter: blur(2px);
+    border: 1px solid #ffffff1a;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    transition: filter 700ms ease;
+}
+
+header:hover {
+    filter: drop-shadow(0 0.5rem 1rem #9c39c6);
 }

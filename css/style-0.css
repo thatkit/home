@@ -21,8 +21,8 @@ html {
 body {
     width: 100vw;
     height: 3052px;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
     background: url('./background-tile.png') #ffffff59;
     background-blend-mode: lighten;
     display: flex;
@@ -43,7 +43,7 @@ nav {
     font-family: 'Roboto Mono', monospace;
     width: 100vw;
     height: 4.167rem;
-    padding: 26px 15%;
+    padding: 1rem 6.5rem;
     position: fixed;
     z-index: 2;
     display: flex;

@@ -76,7 +76,7 @@ button#CTA-cstyle:hover {
 /* Works Section */
 
 section#works {
-    padding: 0 4rem;
+    padding: 0 2.5rem;
 }
 
 div.works-card {
@@ -113,6 +113,27 @@ div.colouring-film {
 }
 
 div.works-card:hover {
+    filter: drop-shadow(0 0.5rem 1rem #9c39c638);
+    box-shadow: 0rem 0.25rem 2rem #9c39c638;
+    opacity: 1;
+}
+
+/* Skills Section */
+
+div.skills-card {
+    border-radius: 2rem;
+    background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
+    opacity: 0.8;
+    border: 1px solid #ffffff1a;
+    backdrop-filter: blur(2px);
+    box-shadow: 0rem 0.25rem 1.25rem #9c39c640;
+    padding: 0 4rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    transition: all 700ms ease;
+}
+
+div.skills-card:hover {
     filter: drop-shadow(0 0.5rem 1rem #9c39c638);
     box-shadow: 0rem 0.25rem 2rem #9c39c638;
     opacity: 1;

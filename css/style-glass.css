@@ -1,22 +1,22 @@
 /* Navbar */
 
 nav {
-    background: linear-gradient(to right top, hsla(0, 0%, 100%, 0.3), hsla(282, 53%, 83%, 0.3));
-    filter: drop-shadow(0 4px 4px hsla(280, 53%, 83%, 0.2));
+    background: linear-gradient(to right top, #ffffff4d, #ddbdeb4d);
+    filter: drop-shadow(0 4px 4px #dbbdeb33);
     backdrop-filter: blur(3px);
-    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+    border-bottom: 1px solid #ffffff1a;
 }
 
 nav > ul.active {
-    background: linear-gradient(to left bottom, hsla(282, 55%, 50%, 0.3), hsla(280, 5%, 25%, 0));
+    background: linear-gradient(to left bottom, #9c39c64d, #413d4300);
     /*filter: drop-shadow(0 4px 4px hsla(280, 53%, 83%, 0.2));*/
-    border: 1px solid hsla(282, 55%, 95%, 0.1);
+    border: 1px solid #f5ebf91a;
     border-radius: 1rem;
     backdrop-filter: blur(1rem);
 }
 
 nav > ul.active:hover {
-    background: hsla(282, 55%, 50%, 0.3);
+    background: #9c39c64d;
 }
 
 nav h4.active {

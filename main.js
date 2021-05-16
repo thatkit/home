@@ -228,15 +228,15 @@ contacts[1].onmouseout = () => contactIcons[1].style.backgroundImage = '';
 
 // 7. Changing styles
 
-const head = document.getElementsByTagName('head')[0];
+const styleLink = document.getElementById('style-link');
 const changeButton = document.getElementById('CTA-cstyle');
-const styles = ['', '<link rel="stylesheet" href="./css/style-glass.css" type="text/css"></link>'];
+const styles = ['', './css/style-glass.css'];
 
 const chooseStyle = () => {
     let i = Math.floor(Math.random() * styles.length);
     return i;
 }
 
-const changeStyle = () => head.innerHTML += styles[chooseStyle()];
+const changeStyle = () => styleLink.href = styles[chooseStyle()];
 
 changeButton.onclick = () => changeStyle();
